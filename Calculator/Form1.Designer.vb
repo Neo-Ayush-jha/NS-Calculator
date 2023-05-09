@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
         TextBox1 = New TextBox()
         Button1 = New Button()
         Button2 = New Button()
@@ -41,6 +42,13 @@ Partial Class Form1
         Button16 = New Button()
         Button17 = New Button()
         Label1 = New Label()
+        Button18 = New Button()
+        Button19 = New Button()
+        Button20 = New Button()
+        Button21 = New Button()
+        Button22 = New Button()
+        Button23 = New Button()
+        Button25 = New Button()
         SuspendLayout()
         ' 
         ' TextBox1
@@ -57,7 +65,7 @@ Partial Class Form1
         ' 
         Button1.BackColor = Color.Red
         Button1.ForeColor = SystemColors.ButtonFace
-        Button1.Location = New Point(300, 35)
+        Button1.Location = New Point(300, 31)
         Button1.Margin = New Padding(4, 3, 4, 3)
         Button1.Name = "Button1"
         Button1.Size = New Size(74, 40)
@@ -68,7 +76,7 @@ Partial Class Form1
         ' Button2
         ' 
         Button2.ForeColor = Color.FromArgb(CByte(0), CByte(0), CByte(0), CByte(1))
-        Button2.Location = New Point(13, 105)
+        Button2.Location = New Point(13, 233)
         Button2.Margin = New Padding(4, 3, 4, 3)
         Button2.Name = "Button2"
         Button2.Size = New Size(74, 40)
@@ -79,7 +87,7 @@ Partial Class Form1
         ' Button3
         ' 
         Button3.ForeColor = Color.FromArgb(CByte(0), CByte(0), CByte(0), CByte(2))
-        Button3.Location = New Point(107, 105)
+        Button3.Location = New Point(107, 233)
         Button3.Margin = New Padding(4, 3, 4, 3)
         Button3.Name = "Button3"
         Button3.Size = New Size(74, 40)
@@ -90,7 +98,7 @@ Partial Class Form1
         ' Button4
         ' 
         Button4.ForeColor = SystemColors.ActiveCaptionText
-        Button4.Location = New Point(201, 105)
+        Button4.Location = New Point(201, 233)
         Button4.Margin = New Padding(4, 3, 4, 3)
         Button4.Name = "Button4"
         Button4.Size = New Size(74, 40)
@@ -134,7 +142,7 @@ Partial Class Form1
         ' Button8
         ' 
         Button8.ForeColor = SystemColors.ActiveCaptionText
-        Button8.Location = New Point(13, 233)
+        Button8.Location = New Point(13, 105)
         Button8.Margin = New Padding(4, 3, 4, 3)
         Button8.Name = "Button8"
         Button8.Size = New Size(74, 40)
@@ -145,7 +153,7 @@ Partial Class Form1
         ' Button9
         ' 
         Button9.ForeColor = SystemColors.ActiveCaptionText
-        Button9.Location = New Point(107, 233)
+        Button9.Location = New Point(107, 105)
         Button9.Margin = New Padding(4, 3, 4, 3)
         Button9.Name = "Button9"
         Button9.Size = New Size(74, 40)
@@ -156,7 +164,7 @@ Partial Class Form1
         ' Button10
         ' 
         Button10.ForeColor = SystemColors.ActiveCaptionText
-        Button10.Location = New Point(201, 233)
+        Button10.Location = New Point(201, 105)
         Button10.Margin = New Padding(4, 3, 4, 3)
         Button10.Name = "Button10"
         Button10.Size = New Size(74, 40)
@@ -190,10 +198,10 @@ Partial Class Form1
         ' 
         Button13.BackColor = Color.ForestGreen
         Button13.ForeColor = SystemColors.ButtonFace
-        Button13.Location = New Point(201, 295)
+        Button13.Location = New Point(300, 360)
         Button13.Margin = New Padding(4, 3, 4, 3)
         Button13.Name = "Button13"
-        Button13.Size = New Size(74, 40)
+        Button13.Size = New Size(74, 96)
         Button13.TabIndex = 13
         Button13.Text = "="
         Button13.UseVisualStyleBackColor = False
@@ -253,14 +261,98 @@ Partial Class Form1
         Label1.Size = New Size(0, 34)
         Label1.TabIndex = 18
         ' 
+        ' Button18
+        ' 
+        Button18.ForeColor = SystemColors.ActiveCaptionText
+        Button18.Location = New Point(13, 360)
+        Button18.Margin = New Padding(4, 3, 4, 3)
+        Button18.Name = "Button18"
+        Button18.Size = New Size(74, 40)
+        Button18.TabIndex = 19
+        Button18.Text = "√ "
+        Button18.UseVisualStyleBackColor = True
+        ' 
+        ' Button19
+        ' 
+        Button19.ForeColor = SystemColors.ActiveCaptionText
+        Button19.Location = New Point(13, 416)
+        Button19.Margin = New Padding(4, 3, 4, 3)
+        Button19.Name = "Button19"
+        Button19.Size = New Size(74, 40)
+        Button19.TabIndex = 20
+        Button19.Text = "Sin"
+        Button19.UseVisualStyleBackColor = True
+        ' 
+        ' Button20
+        ' 
+        Button20.ForeColor = SystemColors.ActiveCaptionText
+        Button20.Location = New Point(107, 360)
+        Button20.Margin = New Padding(4, 3, 4, 3)
+        Button20.Name = "Button20"
+        Button20.Size = New Size(74, 40)
+        Button20.TabIndex = 21
+        Button20.Text = "x^y"
+        Button20.UseVisualStyleBackColor = True
+        ' 
+        ' Button21
+        ' 
+        Button21.ForeColor = SystemColors.ActiveCaptionText
+        Button21.Location = New Point(201, 360)
+        Button21.Margin = New Padding(4, 3, 4, 3)
+        Button21.Name = "Button21"
+        Button21.Size = New Size(74, 40)
+        Button21.TabIndex = 22
+        Button21.Text = "F"
+        Button21.UseVisualStyleBackColor = True
+        ' 
+        ' Button22
+        ' 
+        Button22.ForeColor = SystemColors.ActiveCaptionText
+        Button22.Location = New Point(107, 416)
+        Button22.Margin = New Padding(4, 3, 4, 3)
+        Button22.Name = "Button22"
+        Button22.Size = New Size(74, 40)
+        Button22.TabIndex = 23
+        Button22.Text = "Cos"
+        Button22.UseVisualStyleBackColor = True
+        ' 
+        ' Button23
+        ' 
+        Button23.ForeColor = SystemColors.ActiveCaptionText
+        Button23.Location = New Point(201, 416)
+        Button23.Margin = New Padding(4, 3, 4, 3)
+        Button23.Name = "Button23"
+        Button23.Size = New Size(74, 40)
+        Button23.TabIndex = 24
+        Button23.Text = "Tan"
+        Button23.UseVisualStyleBackColor = True
+        ' 
+        ' Button25
+        ' 
+        Button25.ForeColor = SystemColors.ActiveCaptionText
+        Button25.Location = New Point(201, 295)
+        Button25.Margin = New Padding(4, 3, 4, 3)
+        Button25.Name = "Button25"
+        Button25.Size = New Size(74, 40)
+        Button25.TabIndex = 26
+        Button25.Text = "00"
+        Button25.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
-        BackgroundImage = My.Resources.Resources.hulk__2_
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Center
-        ClientSize = New Size(397, 357)
+        ClientSize = New Size(390, 483)
+        Controls.Add(Button25)
+        Controls.Add(Button23)
+        Controls.Add(Button22)
+        Controls.Add(Button21)
+        Controls.Add(Button20)
+        Controls.Add(Button19)
+        Controls.Add(Button18)
         Controls.Add(Label1)
         Controls.Add(Button17)
         Controls.Add(Button16)
@@ -308,4 +400,11 @@ Partial Class Form1
     Friend WithEvents Button16 As Button
     Friend WithEvents Button17 As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button18 As Button
+    Friend WithEvents Button19 As Button
+    Friend WithEvents Button20 As Button
+    Friend WithEvents Button21 As Button
+    Friend WithEvents Button22 As Button
+    Friend WithEvents Button23 As Button
+    Friend WithEvents Button25 As Button
 End Class

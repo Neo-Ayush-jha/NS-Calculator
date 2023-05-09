@@ -1,6 +1,6 @@
 ﻿Public Class Form1
     Dim y As String
-    Dim x As Integer
+    Dim x, z As Integer
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
         y = Button17.Text
         x = Val(TextBox1.Text)
@@ -63,11 +63,53 @@
             TextBox1.Text = Val(TextBox1.Text) * x
         ElseIf y = "/" Then
             TextBox1.Text = x / Val(TextBox1.Text)
+        ElseIf y = "F" Then
+            TextBox1.Text = (x * 9 / 5) + 32
+        ElseIf y = "x^y" Then
+            Dim i As Integer
+            z = Val(TextBox1.Text)
+            Dim w As Integer = x
+            For i = 2 To z
+                x = x * w
+            Next i
+            TextBox1.Text = x
         Else
             TextBox1.Text = ""
         End If
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         TextBox1.Text = ""
+    End Sub
+
+    Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
+        y = Button21.Text
+        x = Val(TextBox1.Text)
+    End Sub
+
+    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        TextBox1.Text = Math.Sqrt(Val(TextBox1.Text))
+    End Sub
+
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+        TextBox1.Text = Val((TextBox1.Text * 3.14) / 180)
+    End Sub
+
+    Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
+        y = Button20.Text
+        x = TextBox1.Text
+        TextBox1.Text = ""
+
+    End Sub
+
+    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
+        TextBox1.Text = Math.Cos(Val(TextBox1.Text))
+    End Sub
+
+    Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
+        TextBox1.Text = TextBox1.Text + Button25.Text
+    End Sub
+
+    Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
+        TextBox1.Text = Math.Tan(Val(TextBox1.Text))
     End Sub
 End Class
